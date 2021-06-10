@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - click
     - prompt_toolkit
-    - python
+    - python >=3.6
     - six
 
 test:
@@ -42,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - mcg1969
+    - izahn
