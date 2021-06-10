@@ -1,27 +1,27 @@
 {% set name = "click-repl" %}
-{% set version = "0.1.6" %}
+{% set version = "0.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9f29d52abc4d6059f8e276132a111ab8d94980afe6a5432b9d996544afa95d5
+  sha256: cd12f68d745bf6151210790540b4cb064c7b13e571bc64b6957d98d120dacfd8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - click
     - prompt_toolkit
-    - python
+    - python >=3.6
     - six
 
 test:
@@ -42,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - mcg1969
+    - izahn
