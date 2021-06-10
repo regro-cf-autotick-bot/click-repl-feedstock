@@ -121,5 +121,5 @@ Feedstock Maintainers
 =====================
 
 * [@izahn](https://github.com/izahn/)
-* [@mcg1969i](https://github.com/mcg1969i/)
+* [@mcg1969](https://github.com/mcg1969/)
 
