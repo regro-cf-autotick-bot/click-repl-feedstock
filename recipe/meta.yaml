@@ -1,13 +1,13 @@
 {% set name = "click-repl" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17849c23dba3d667247dc4defe1757fff98694e90fe37474f3feebb69ced26a9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 52f8962ff0fdae8105d568123b144951257b6bfcfb44ff6f043379c307d0a8ac
 
 build:
   number: 0
